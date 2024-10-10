@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    background-color: #46706F;
+    color: white;
+    width: 20%;
+    padding: 20px;
+}
+
+.sidebar h1 {
+    margin-bottom: 40px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-placeholder {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    object-fit: cover;
+}
+
+.infobox label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-right: 10px;
+}
+
+input[type="date"], input[type="text"], select {
+    padding: 5px;
+    width: 200px;
+    border-radius: 6px;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background: #46706F;
+    color: white;
+}
+
+.products-table th, .products-table td {
+    border: 1px solid #082e0f;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #46706F;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.btn:hover {
+    background-color: #3b5f5c;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+}
+
+.btn-primary:hover {
+    background-color: #004494;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: right;
+    
+}

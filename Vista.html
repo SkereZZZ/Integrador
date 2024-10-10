@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF en Ventana Flotante</title>
+    <link rel="stylesheet" href="css/styleVista.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <h2>Ver PDF en Ventana Flotante</h2>
+            <button class="icon-button" id="openModal">&#128196; Ver PDF</button> <!-- Icono para abrir el PDF -->
+        </main>
+
+        <!-- Modal flotante -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <iframe src="pdf/389969922-Solicitud-de-Permiso-Para-Evento-Extraordinario.pdf" width="100%" height="700px"></iframe> <!-- Cambia la ruta del PDF -->
+            </div>
+        </div>
+    </div>
+
+    <script src="JavaScript/Vista.js"></script>
+</body>
+</html>

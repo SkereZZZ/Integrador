@@ -1,0 +1,71 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    padding: 50px;
+}
+
+.main-content {
+    text-align: center;
+}
+
+/* Botón de icono */
+.icon-button {
+    padding: 10px 20px;
+    background-color: #46706F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.icon-button:hover {
+    background-color: #345251;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+}
+
+.modal-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    background-color: white;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Botón de cierre (X) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close:hover {
+    color: #46706F;
+}

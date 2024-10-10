@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="css/styleCliente.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <h1>DOC+</h1>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="Cliente.html">Clientes</a></li>
+                <li><a href="Generador.html">Ventas</a></li>
+                <li><a href="Resumenes.html">Resúmenes</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <div class="Head2">
+                <h2>Clientes</h2>
+                <a href="login.html" class="salir">Salir</a>
+            </div>
+            
+            <div class="top-options">
+                <label for="search">Nombres:</label>
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Buscar...">
+                    <button type="submit">&#128269;</button>
+                </div>
+                <input  class="NameAdd" type="text" placeholder="Nombres y Apellidos">
+                <button class="new-button">Nuevo</button>
+            </div>
+
+            <div class="table-container">
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Cliente</th>
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Yerson Luis Peralta Balta</td>
+                            <td>
+                                <button class="icon-button" id="openModal">&#9998;</button> <!-- Icono de lápiz -->
+                                <button class="icon-button">&#128465;</button> <!-- Icono de basura -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <iframe src="pdf/389969922-Solicitud-de-Permiso-Para-Evento-Extraordinario.pdf" width="100%" height="700px"></iframe>
+                        <textarea name=""></textarea>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="JavaScript/Vista.js"></script>
+</body>
+</html>

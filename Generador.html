@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Comprobante</title>
+    <link rel="stylesheet" href="css/styleGenerador.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <h1>DOC+</h1>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="Cliente.html">Clientes</a></li>
+                <li><a href="Generador.html">Ventas</a></li>
+                <li><a href="Resumenes.html">Resúmenes</a></li>
+            </ul>
+        </aside>
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <div class="form-container">
+                <div class="form-header">
+                    <div class="logo-placeholder">
+                        <img src="../miniom.png">
+                    </div>
+                    <div class="infobox">
+                        <label>Contadores S.A.C</label>
+                        <label>Gestion</label>
+                        <label>Arturo Chavez</label>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="tipoComprobante">Tipo comprobante</label>
+                        <select id="tipoComprobante">
+                            <option>Boleta Electrónica</option>
+                            <option>Factura</option>
+                        </select>
+
+                        <label for="serie">Serie</label>
+                        <select id="serie">
+                            <option>F001</option>
+                            <option>F002</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cliente">Cliente</label>
+                        <input type="text" id="cliente">
+
+                        <label for="fechaEmision">Fecha de emisión</label>
+                        <input type="date" id="fechaEmision" value="2024-06-10">
+
+                        <label for="fechaVencimiento">Fecha de vencimiento</label>
+                        <input type="date" id="fechaVencimiento" value="2024-06-10">
+                    </div>
+
+                    <div class="form-group">
+                        <label  class="Monto_Pago" for="pago">Pago</label>
+                        <input type="text" id="pago">
+                    </div>
+
+                    <!-- Tabla de productos -->
+                    <table class="products-table">
+                        <thead>
+                            <tr>
+                                <th>N</th>
+                                <th>Descripción</th>
+                                <th>Unidad</th>
+                                <th>Cantidad</th>
+                                <th>P. Unitario</th>
+                                <th>Sub Total</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Aquí se agregarán productos -->
+                        </tbody>
+                    </table>
+
+                    <button type="button" class="btn">Agregar Producto</button>
+
+                    <div class="form-buttons">
+                        <button type="button" class="btn">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Generar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
